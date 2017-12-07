@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Handle name:</strong>
+  <%= @user.handle_name %>
+</p>
+
+<%= render :partial => 'show_face' %>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', chirps_path %>
